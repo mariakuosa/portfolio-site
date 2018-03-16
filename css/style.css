@@ -8,39 +8,34 @@ Fourth Color (White): #FFFFFF;
 Fifth Color (Grey): #C4C6C7;
 */
 body {
-  padding: 10px; /* Adds a 10px inner spacing to all sides*/
-  margin: 10px; /* Adds a 10px outer spacing to all sides*/
-}
-body {
   font-family: 'Arimo', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  background-color: white;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 26px;
 }
 
 h2 {
-  font-size: 24px;
-  color: #5BC0EB
+  font-size: 20px;
+  color: #191919;
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 20px;
+  color: #5BC0EB;
 }
 
-body {
-  background-color: white;
+div {
+  max-width: 600px;
+  margin-top: 20px;
 }
 
 a {
   color: #E56399;
-}
-
-a {
-   text-decoration:none;
+  text-decoration:none;
 }
 
 a:visited {
@@ -48,8 +43,10 @@ a:visited {
   color: #E56399;
 }
 
-a:hover {
-color: #C4C6C7;
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #C4C6C7;
 }
 
 a:active {
@@ -57,12 +54,7 @@ a:active {
   color: #E56399;
 }
 
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
-button {
+.button {
   /* overwrite browser defaults */
   border: none; /* reset the border */
   font-family: inherit; /* takes the font from the outer container */
@@ -74,16 +66,9 @@ button {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #E56399; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
-button:hover,
-button:focus {
-  cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
-  opacity: 0.8; /* Reduces the opactiy of the button to 80% */
-}
-
-div.e:hover {
-    background-color: #C4C6C7;
+.button:hover {
+  background: #C4C6C7;
 }
