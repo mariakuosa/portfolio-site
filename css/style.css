@@ -19,6 +19,7 @@ body {
   float: left;
   display: inline-block;
   vertical-align: baseline;
+  min-height: 200px;
 }
 
 h1 {
@@ -114,27 +115,28 @@ nav {
 .navigation > li {
   display: inline-block;
   margin-left: 10px;
+  font-size: 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 991px) {
   .logo {
     /* Make logo smaller by changing it's height */
-    height: 100px;
+    height: auto;
   }
   h1 {
     /* Reduce font-size of heading */
     font-size: 26px;
-    text-align: left;
+    text-align: center;
   }
   h2 {
     /* Reduce font-size of heading */
     font-size: 20px;
-    text-align: left;
+    text-align: center;
   }
   h3 {
     /* Reduce font-size of heading */
     font-size: 20px;
-    text-align: left;
+    text-align: center;
   }
   .column-4 {
     /* Modify 4-column to 2-columns */
@@ -143,49 +145,86 @@ nav {
   }
   .navigation {
     /* Modify 4-column to 2-columns */
-    font-size: 14px;
+    font-size: 20px;
     text-align: left;
   }
 
   header {
-    font-size: 12px;
+    font-size: 16px;
     min-width: 320;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .logo {
     /* Make logo smaller by changing it's height */
-    height: 100px;
+    height: auto;
   }
   h1 {
     /* Reduce font-size of heading */
-    font-size: 20px;
-    text-align: left;
+    font-size: 26px;
+    text-align: center;
   }
   h2 {
     /* Reduce font-size of heading */
-    font-size: 18px;
-    text-align: left;
+    font-size: 20px;
+    text-align: center;
   }
   h3 {
     /* Reduce font-size of heading */
-    font-size: 18px;
-    text-align: left;
+    font-size: 20px;
+    text-align: center;
   }
   .column-4 {
     /* Modify 4-column to 2-columns */
-    width: auto;
+    width: 49%;
     margin-right: 1%;
   }
   .navigation {
     /* Modify 4-column to 2-columns */
-    font-size: 14px;
+    font-size: 20px;
     text-align: left;
   }
 
   header {
-    font-size: 12px;
+    font-size: 16px;
+    min-width: 320;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo {
+    /* Make logo smaller by changing it's height */
+    height: auto;
+  }
+  h1 {
+    /* Reduce font-size of heading */
+    font-size: 20px;
+    text-align: center;
+  }
+  h2 {
+    /* Reduce font-size of heading */
+    font-size: 18px;
+    text-align: center;
+  }
+  h3 {
+    /* Reduce font-size of heading */
+    font-size: 18px;
+    text-align: center;
+  }
+  .column-4 {
+    /* Modify 4-column to 2-columns */
+    width: 100%;
+    margin-right: 1%;
+  }
+  .navigation {
+    /* Modify 4-column to 2-columns */
+    font-size: 20px;
+    text-align: left;
+  }
+
+  header {
+    font-size: 16px;
     min-width: 320;
   }
 }
@@ -218,4 +257,19 @@ svg {
 img {
   /* added thin image border to ensure consistent outlook for the images */
   border:1px solid #C4C6C7;
+}
+
+.text-paragraph {
+  /* paragraph with fixed width */
+  max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-center {
+  max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
