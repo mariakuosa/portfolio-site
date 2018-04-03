@@ -20,6 +20,7 @@ body {
   display: inline-block;
   vertical-align: baseline;
   min-height: 200px;
+  border-radius: 3px;
 }
 
 h1 {
@@ -61,13 +62,13 @@ a:active {
   color: #E56399;
 }
 
+button,
 .button {
   /* overwrite browser defaults */
   margin-top: 20px;
   margin-bottom: 20px;
   border: none; /* reset the border */
   font-family: inherit; /* takes the font from the outer container */
-  display: inline-block;
   font-size: 16px;
 
   /* style button */
@@ -76,7 +77,11 @@ a:active {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  transition: background-color
+  border-bottom: 0px solid #C4C6C7;
+  transition-duration: 0.2s;
+  transition: 0.4s background-color;
+  display: inline-block;
+  box-shadow: none !important;
 }
 
 .button:hover {
@@ -240,7 +245,7 @@ nav {
   margin: 40px 0 80px;
 }
 
-svg {
+.linkedin-icon {
   /* made the LinkediN icon smaller */
   width: 9%;
 }
@@ -272,4 +277,36 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.panorama {
+  display: block;
+  text-align: center;
+  border: 0.5px;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@keyframes metro-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+  vertical-align: bottom;
+}
+
+@keyframes tree-swing {
+  0%{-webkit-transform:rotate(-3deg)}
+  50%{-webkit-transform:rotate(3deg)}
+  100%{-webkit-transform:rotate(-3deg)}
+}
+
+.sun {
+  animation: 10s color-change infinite alternate linear;
+}
+
+.metro {
+  animation: 40s metro-move infinite alternate linear;
 }
