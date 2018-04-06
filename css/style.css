@@ -10,37 +10,50 @@ Fifth Color (Grey): #C4C6C7;
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Arimo', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: white;
+  margin: 0;
 }
 header {
   display: inline-block;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #191919;
 }
-
-.logo {
+.main-image {
+  background-image: url("img/twitter_koivu.jpg");
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+footer {
   display: inline-block;
-  vertical-align: baseline;
-  width: 150px;
-  border-radius: 3px;
+  width: 100%;
+  height: 100px;
+  margin: 50px 0 0 0;
+  padding: 40px 0 0 0;
+  background-color: #191919;
 }
-
+.footer-text {
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  color: #FFF;
+}
 h1 {
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
 }
-
 h2 {
   font-size: 20px;
   color: #191919;
   font-weight: bold;
   text-align: center;
 }
-
 h3 {
   font-size: 20px;
   font-weight: 400;
@@ -48,29 +61,24 @@ h3 {
 }
 ul {
   overflow: hidden;
-  background-color: #ffffff
 }
 a {
   color: #E56399;
   text-decoration:none;
 }
-
 a:visited {
   /* visited link */
   color: #E56399;
 }
-
 a:hover,
 a:focus {
   text-decoration: none;
   color: #C4C6C7;
 }
-
 a:active {
   /* selected link */
   color: #E56399;
 }
-
 button,
 .button {
   /* overwrite browser defaults */
@@ -99,7 +107,6 @@ button,
 
 /* Layout styling */
 .wrapper {
-  min-width: 360px;
   max-width: 1200px;
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
   padding: 0 20px;
@@ -111,20 +118,22 @@ button,
 
 .column-4 {
   font-size: 16px;
-  width: 24%;
   display: inline-block;
-  margin-right: 1%;
+  width: 23.5%;
+  margin-right: 2%;
   text-align: center;
 }
-
+.column-4:last-child{
+  margin-right: 0;
+}
 nav {
-  float: right;
-  display: inline-block;
 }
 .navigation {
   list-style-type: none;
-  padding-right:20px;
+  padding-right:50px;
   padding-left: 10px;
+  float: right;
+  word-spacing: 25px;
 }
 .navigation > li {
   display: inline-block;
@@ -181,11 +190,11 @@ img {
 .panorama {
   display: block;
   text-align: center;
-  border: 1px solid #C4C6C7;
 }
 .panorama svg {
   max-width: 800px;
   margin: 40px 0 0;
+  border: 1px solid #C4C6C7;
 }
 
 @keyframes color-change {
@@ -193,40 +202,17 @@ img {
   50% {fill: #fcffad;}
   100% {fill: #f76414;}
 }
-
 @keyframes metro-move {
   from {transform: translate(0,172px);}
   to {transform: translate(300px,172px);}
 }
-
-@keyframes tree-swing {
-  0%{-webkit-transform:rotate(3deg)}
-  50%{-webkit-transform:rotate(3deg)}
-  100%{-webkit-transform:rotate(3deg)}
-}
-
 .sun {
   animation: 10s color-change infinite alternate linear;
 }
-
 .metro {
   animation: 15s metro-move infinite alternate linear;
 }
-
-.big-tree {
-  animation: 10s tree-swing infinite alternate linear;
-}
-
 @media (max-width: 991px) {
-  .logo {
-    /* Make logo smaller by changing it's height */
-    height: auto;
-  }
-  h1 {
-    /* Reduce font-size of heading */
-    font-size: 26px;
-    text-align: center;
-  }
   h2 {
     /* Reduce font-size of heading */
     font-size: 20px;
@@ -240,88 +226,47 @@ img {
   .column-4 {
     /* Modify 4-column to 2-columns */
     width: 49%;
-    margin-right: 1%;
+  }
+  .column-4:nth-child(even) {
+    margin-right: 0;
   }
   .navigation {
     /* Modify 4-column to 2-columns */
     font-size: 20px;
     text-align: left;
   }
-
   header {
     font-size: 16px;
     min-width: 320;
   }
 }
-
 @media (max-width: 767px) {
-  .logo {
-    /* Make logo smaller by changing it's height */
-    height: auto;
-  }
-  h1 {
-    /* Reduce font-size of heading */
-    font-size: 26px;
-    text-align: center;
-  }
-  h2 {
-    /* Reduce font-size of heading */
-    font-size: 20px;
-    text-align: center;
-  }
-  h3 {
-    /* Reduce font-size of heading */
-    font-size: 20px;
-    text-align: center;
-  }
-  .column-4 {
-    /* Modify 4-column to 2-columns */
-    width: 49%;
-    margin-right: 1%;
-  }
-  .navigation {
-    /* Modify 4-column to 2-columns */
-    font-size: 20px;
-    text-align: left;
-  }
-
-  header {
-    font-size: 16px;
-    min-width: 320;
-  }
 }
-
 @media (max-width: 575px) {
-  .logo {
-    /* Make logo smaller by changing it's height */
-    height: auto;
-  }
   h1 {
     /* Reduce font-size of heading */
     font-size: 20px;
-    text-align: center;
   }
   h2 {
     /* Reduce font-size of heading */
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
   }
   h3 {
     /* Reduce font-size of heading */
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
   }
   .column-4 {
     /* Modify 4-column to 2-columns */
     width: 100%;
-    margin-right: 1%;
+    margin-right: 0;
   }
   .navigation {
     /* Modify 4-column to 2-columns */
-    font-size: 20px;
+    font-size: 14px;
     text-align: left;
   }
-
   header {
     font-size: 16px;
     min-width: 320;
