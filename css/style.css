@@ -1,11 +1,11 @@
 /*
 Colors used
 
-Primary Color (Pink): #E56399;
-Secondary Color (Blue): #5BC0EB;
-Tertiary Color (Black): #191919;
+Primary Color (Pink): #6E7376;
+Secondary Color (Green): #4ABDAC;
+Tertiary Color (Rosa): #EEB6B7;
 Fourth Color (White): #FFFFFF;
-Fifth Color (Grey): #C4C6C7;
+Fifth Color (Black): #191919;
 */
 * {
   box-sizing: border-box;
@@ -23,7 +23,7 @@ header {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #191919;
+  background-color: #6E7376;
 }
 .main-image {
   background-image: url("img/twitter_koivu.jpg");
@@ -37,13 +37,13 @@ footer {
   height: 100px;
   margin: 50px 0 0 0;
   padding: 40px 0 0 0;
-  background-color: #191919;
+  background-color: #6E7376;
 }
 .footer-text {
   display: inline-block;
   font-size: 14px;
   text-align: center;
-  color: #FFF;
+  color: #EEB6B7;
 }
 h1 {
   font-size: 24px;
@@ -52,8 +52,9 @@ h1 {
 h2 {
   font-size: 20px;
   color: #191919;
-  font-weight: bold;
+  font-weight: bolder;
   text-align: center;
+    margin-bottom: -10px;
 }
 h3 {
   font-size: 20px;
@@ -64,21 +65,21 @@ ul {
   overflow: hidden;
 }
 a {
-  color: #E56399;
+  color: #FFFFFF;
   text-decoration:none;
 }
 a:visited {
   /* visited link */
-  color: #E56399;
+  color: #FFFFFF;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #C4C6C7;
+  color: #EEB6B7;
 }
 a:active {
   /* selected link */
-  color: #E56399;
+  color: #EEB6B7;
 }
 button,
 .button {
@@ -88,41 +89,38 @@ button,
   border: none; /* reset the border */
   font-family: inherit; /* takes the font from the outer container */
   font-size: 16px;
-
   /* style button */
-  background-color: #E56399;
+  background-color: #4ABDAC;
   color: white !important;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 0px solid #C4C6C7;
+  border-bottom: 0px solid #4ABDAC;
   transition-duration: 0.2s;
   transition: 0.4s background-color;
   display: inline-block;
   box-shadow: none !important;
 }
-
 .button:hover {
-  background-color: #C4C6C7;
+  background-color: #EEB6B7;
 }
-
 /* Layout styling */
 .wrapper {
   max-width: 1200px;
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
   padding: 0 20px;
 }
-
 .columns-container {
   font-size: 0;
 }
-
 .column-4 {
   font-size: 16px;
   display: inline-block;
   width: 23.5%;
   margin-right: 2%;
   text-align: center;
+  /* other rules... */
+  vertical-align:top;
 }
 .column-4:last-child{
   margin-right: 0;
@@ -167,10 +165,9 @@ nav {
   text-align: center;
   font-size: 20;
 }
-
 img {
   /* added thin image border to ensure consistent outlook for the images */
-  border:1px solid #C4C6C7;
+  border:1px solid #4ABDAC;
 }
 
 .text-paragraph {
@@ -179,6 +176,23 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+.contact-paragraph {
+  /* paragraph with fixed width */
+  max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-paragraph a:link{
+    color:#4ABDAC;
+}
+.contact-paragraph a:visited {
+  /* visited link */
+  color: #4ABDAC;
+}
+.contact-paragraph a:hover {
+  color: #EEB6B7;
 }
 
 .title-center {
@@ -195,9 +209,25 @@ img {
 .panorama svg {
   max-width: 800px;
   margin: 40px 0 0;
-  border: 1px solid #C4C6C7;
+  border: 1px solid #4ABDAC;
 }
-
+/*jquery styling */
+.project {
+  position: relative;
+}
+.project-details {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Reset this to 0 */
+  padding: 10px;
+  background: rgba(5, 103, 110, 0.5);
+}
+.project-preview:hover {
+  cursor: pointer;
+}
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
