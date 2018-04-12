@@ -1,11 +1,10 @@
 /*
 Colors used
 
-Primary Color (Pink): #6E7376;
-Secondary Color (Green): #4ABDAC;
-Tertiary Color (Rosa): #EEB6B7;
+Primary Color (Dark purple): #22264b;
+Secondary Color (Rosa): #b56969;
+Tertiary Color (Yellow): #e6cf8b;
 Fourth Color (White): #FFFFFF;
-Fifth Color (Black): #191919;
 */
 * {
   box-sizing: border-box;
@@ -23,38 +22,78 @@ header {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #6E7376;
+  background-color: #22264b;
 }
-.main-image {
-  background-image: url("img/twitter_koivu.jpg");
+.hero {
+  width: 100%;
+}
+.hero img {
   max-width: 100%;
-  height: auto;
-  border: 0;
+  border: none;
+  margin-top: -7px;
 }
+
 footer {
-  display: inline-block;
+display:inline-block;
   width: 100%;
   height: 100px;
-  margin: 50px 0 0 0;
+  margin: 20px 0 0 0;
   padding: 40px 0 0 0;
-  background-color: #6E7376;
+  background-color: #22264b;
 }
 .footer-text {
   display: inline-block;
   font-size: 14px;
   text-align: center;
-  color: #EEB6B7;
+  color: #FFFFFF;
+}
+.color-background {
+  width: 100%;
+  height: 280px;
+  background-color: #22264b;
+}
+.color-background h1 {
+  border: none;
+  margin-top: -7px;
+  padding-top: 20px;
+  color: #FFFFFF;
+}
+.color-background h2 {
+  border: none;
+  color: #FFFFFF;
+}
+.color-background-2 {
+  width: 100%;
+  height: 140px;
+  background-color: #b56969;
+}
+.color-background-2 h2 {
+  border: none;
+  margin-top: -7px;
+    padding-top: 30px;
+  color: #FFFFFF
+}
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid #b56969;
 }
 h1 {
-  font-size: 24px;
+  font-size: 42px;
   text-align: center;
+  line-height: 1.4;
+  color:#22264b;
 }
 h2 {
-  font-size: 20px;
+  font-size: 36px;
   color: #191919;
-  font-weight: bolder;
   text-align: center;
-    margin-bottom: -10px;
 }
 h3 {
   font-size: 20px;
@@ -75,11 +114,11 @@ a:visited {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #EEB6B7;
+  color: #b56969;
 }
 a:active {
   /* selected link */
-  color: #EEB6B7;
+  color: #b56969;
 }
 button,
 .button {
@@ -90,28 +129,29 @@ button,
   font-family: inherit; /* takes the font from the outer container */
   font-size: 16px;
   /* style button */
-  background-color: #4ABDAC;
+  background-color: #b56969;;
   color: white !important;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 0px solid #4ABDAC;
+  border-bottom: 0px solid #b56969;;
   transition-duration: 0.2s;
   transition: 0.4s background-color;
   display: inline-block;
   box-shadow: none !important;
 }
 .button:hover {
-  background-color: #EEB6B7;
+  background-color: #e6cf8b;
 }
 /* Layout styling */
-.wrapper {
+.wrapper, nav {
   max-width: 1200px;
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
   padding: 0 20px;
 }
 .columns-container {
   font-size: 0;
+  height: 320px;
 }
 .column-4 {
   font-size: 16px;
@@ -126,6 +166,8 @@ button,
   margin-right: 0;
 }
 nav {
+  display: table;
+  width: 100%;
 }
 .navigation {
   list-style-type: none;
@@ -151,12 +193,10 @@ nav {
 .page-title h2 {
   margin: 40px 0 80px;
 }
-
 .linkedin-icon {
   /* made the LinkediN icon smaller */
   width: 9%;
 }
-
 .connect-in {
   /* this is a placeholder just in case */
   margin-top: 30px;
@@ -167,7 +207,7 @@ nav {
 }
 img {
   /* added thin image border to ensure consistent outlook for the images */
-  border:1px solid #4ABDAC;
+  border:1px solid #b56969;
 }
 
 .text-paragraph {
@@ -185,23 +225,21 @@ img {
   margin-right: auto;
 }
 .contact-paragraph a:link{
-    color:#4ABDAC;
+  color: #b56969;;
 }
 .contact-paragraph a:visited {
   /* visited link */
-  color: #4ABDAC;
+  color: #b56969;;
 }
 .contact-paragraph a:hover {
-  color: #EEB6B7;
+  color: #e6cf8b;
 }
-
 .title-center {
   max-width: 600px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-
 .panorama {
   display: block;
   text-align: center;
@@ -209,7 +247,7 @@ img {
 .panorama svg {
   max-width: 800px;
   margin: 40px 0 0;
-  border: 1px solid #4ABDAC;
+  border: 1px solid #b56969;;
 }
 /*jquery styling */
 .project {
@@ -223,10 +261,14 @@ img {
   height: 100%;
   margin: 0; /* Reset this to 0 */
   padding: 10px;
-  background: rgba(5, 103, 110, 0.5);
+  color: #FFFFFF;
+  background: #b56969;
 }
 .project-preview:hover {
   cursor: pointer;
+}
+.project-preview h3 {
+color:#22264b;
 }
 @keyframes color-change {
   0% {fill: #edc655;}
@@ -244,9 +286,14 @@ img {
   animation: 15s metro-move infinite alternate linear;
 }
 @media (max-width: 991px) {
+  h1 {
+    /* Reduce font-size of heading */
+    font-size: 36px;
+    text-align: center;
+  }
   h2 {
     /* Reduce font-size of heading */
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
   }
   h3 {
@@ -276,16 +323,16 @@ img {
 @media (max-width: 575px) {
   h1 {
     /* Reduce font-size of heading */
-    font-size: 20px;
+    font-size: 36px;
   }
   h2 {
     /* Reduce font-size of heading */
-    font-size: 14px;
+    font-size: 28px;
     text-align: center;
   }
   h3 {
     /* Reduce font-size of heading */
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
   }
   .column-4 {
