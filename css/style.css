@@ -32,14 +32,14 @@ header {
   margin-top: -7px;
 }
 footer {
-display:inline-block;
-width: 100%;
-margin: 20px 0 0 0;
-padding: 40px 0 ;
-background-color: #22264b;
-font-size: 14px;
-text-align: center;
-color: #FFFFFF;
+  display:inline-block;
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 40px 0 ;
+  background-color: #22264b;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
 }
 .color-background {
   width: 100%;
@@ -62,11 +62,11 @@ color: #FFFFFF;
   background-color: #b56969;
 }
 .color-background-2 h2 {
-font-style:normal !important;
+  font-style:normal !important;
   border: none;
   margin-top: -7px;
   padding-top: 40px;
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 .arrow-down {
   position: absolute;
@@ -236,7 +236,7 @@ img {
 }
 .title-center {
   max-width: 600px;
-text-style: normal;
+  text-style: normal;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -256,17 +256,40 @@ text-style: normal;
 }
 .project-details {
   display: none;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  margin: 0; /* Reset this to 0 */
+  margin: 0px; /* Reset this to 0 */
   padding: 10px;
+  font-size: 20px;
   color: #FFFFFF;
-  background: #b56969;
+  background: rgba(181, 105, 105, 0.9);
+}
+.project-details a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.project-details a:visited {
+  /* visited link */
+  color: #FFFFFF;
+}
+.project-details a:hover,
+a:focus {
+  text-decoration: none;
+  color: #22264b;
+}
+.project-details a:active {
+  /* selected link */
+  color: #22264b;
 }
 .project-preview h3 {
-color:#22264b;
+  color:#22264b;
+}
+.special-4 {
+  cursor: pointer;
+  cursor: hand;
 }
 @keyframes color-change {
   0% {fill: #e6cf8b;}
@@ -348,7 +371,7 @@ color:#22264b;
     min-width: 320;
   }
   .color-background-2 h2 {
-  font-style:normal !important;
+    font-style:normal !important;
     border: none;
     margin-top: -7px;
     padding-top: 20px;
