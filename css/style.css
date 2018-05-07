@@ -56,6 +56,12 @@ footer {
   border: none;
   color: #FFFFFF;
 }
+.color-background h3 {
+  font-style: italic !important;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+}
 .color-background-2 {
   width: 100%;
   height: 140px;
@@ -118,6 +124,24 @@ a:active {
   /* selected link */
   color: #B05F5F;
 }
+a,
+.a-main {
+  color: #B05F5F;
+  text-decoration:none;
+}
+.a-main:visited {
+  /* visited link */
+  color: #B05F5F;
+}
+.a-main:hover,
+.a-main:focus {
+  text-decoration: none;
+  color: #22264b;
+}
+.a-main:active {
+  /* selected link */
+  color: #22264b;
+}
 button,
 .button {
   /* overwrite browser defaults */
@@ -139,6 +163,29 @@ button,
   box-shadow: none !important;
 }
 .button:hover {
+  background-color: #22264b;
+}
+button,
+.button-test {
+  /* overwrite browser defaults */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px #B05F5F; /* reset the border */
+  font-family: inherit; /* takes the font from the outer container */
+  font-size: 24px;
+  /* style button */
+  background-color: #B05F5F;
+  color: white !important;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 3px;
+  border-bottom: 0px solid #B05F5F;
+  transition-duration: 0.2s;
+  transition: 0.4s background-color;
+  display: inline-block;
+  box-shadow: none !important;
+}
+.button-test:hover {
   background-color: #22264b;
 }
 /* Layout styling */
@@ -210,6 +257,14 @@ img {
   /* added thin image border to ensure consistent outlook for the images */
   border:1px solid #B05F5F;
 }
+img,
+.img-main {
+  /* added thin image border to ensure consistent outlook for the images */
+  border:1px solid #B05F5F;
+  max-width: 600px;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
 
 .text-paragraph {
   /* paragraph with fixed width */
@@ -217,6 +272,26 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+.text-paragraph-main {
+  /* paragraph with fixed width */
+  max-width: 1000px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.text-paragraph-video {
+  /* paragraph with fixed width */
+  max-width: 1000px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -7px;
+  font-size: 12px;
 }
 .contact-paragraph {
   /* paragraph with fixed width */
@@ -241,13 +316,21 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.title-center-3 {
+  max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  margin-top: -25px;
+}
 .panorama {
   display: block;
   text-align: center;
 }
 .panorama svg {
   max-width: 800px;
-  margin: 40px 0 0;
+  margin: 10px 0 0;
   border: 1px solid #B05F5F;;
 }
 /*jquery styling */
@@ -266,6 +349,7 @@ img {
   font-size: 20px;
   color: #FFFFFF;
   background: rgba(181, 105, 105, 0.93);
+  cursor: none;
 }
 .project-details a {
   color: #FFFFFF;
@@ -361,9 +445,10 @@ a:focus {
     font-size: 14px;
     text-align: left;
   }
-  header {
-    font-size: 16px;
-    min-width: 320px;
+  .color-background {
+    width: 100%;
+    height: 380px;
+    background-color: #22264b;
   }
   .color-background-2 h2 {
     font-style:normal !important;
