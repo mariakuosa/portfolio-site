@@ -110,7 +110,7 @@ ul {
   overflow: hidden;
 }
 a {
-  color: #FFFFFF;
+  color: #B05F5F;
   text-decoration:none;
 }
 a:visited {
@@ -125,24 +125,6 @@ a:focus {
 a:active {
   /* selected link */
   color: #FFFFFF;
-}
-a,
-.a-main {
-  color: #B05F5F;
-  text-decoration:none;
-}
-.a-main:visited {
-  /* visited link */
-  color: #B05F5F;
-}
-.a-main:hover,
-.a-main:focus {
-  text-decoration: none;
-  color: #22264b;
-}
-.a-main:active {
-  /* selected link */
-  color: #22264b;
 }
 button,
 .button {
@@ -269,8 +251,6 @@ img,
   /* added thin image border to ensure consistent outlook for the images */
   border:1px solid #B05F5F;
   max-width: 600px;
-  margin-top:10px;
-  margin-bottom: 10px;
 }
 
 .text-paragraph {
@@ -352,7 +332,7 @@ img,
   width: 100%;
   height: 96.5%;
   margin: 0px; /* Reset this to 0 */
-  padding: 10px;
+  padding: 10px 10px;
   font-size: 20px;
   color: #FFFFFF;
   background: rgba(181, 105, 105, 0.93);
